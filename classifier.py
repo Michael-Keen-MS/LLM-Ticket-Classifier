@@ -160,7 +160,7 @@ def classify_single(subject: str, body: str, client: anthropic.Anthropic = None)
 
 
 def classify_batch(df: pd.DataFrame, client: anthropic.Anthropic,
-                   rate_limit_delay: float = 0.1) -> pd.DataFrame:
+                   rate_limit_delay: float = 1.5) -> pd.DataFrame:
     """
     Classify all tickets in a DataFrame.
 
@@ -278,7 +278,7 @@ def main():
 
     # Run classification
     start_time = time.time()
-    df_classified = classify_batch(df, client, rate_limit_delay=0.05)
+    df_classified = classify_batch(df, client, rate_limit_delay=1.5)
     elapsed = time.time() - start_time
 
     print(f"Classification complete in {elapsed:.1f}s "
