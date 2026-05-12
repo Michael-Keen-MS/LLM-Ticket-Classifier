@@ -18,6 +18,9 @@ import sys
 import time
 from pathlib import Path
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # ─── Auto-install anthropic if needed ──────────────────────────────────────
 try:
     import anthropic
