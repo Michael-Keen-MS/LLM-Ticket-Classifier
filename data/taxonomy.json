@@ -1,0 +1,92 @@
+{
+  "categories": [
+    "Billing & Payments",
+    "Account Access",
+    "Technical Issue",
+    "Product Question",
+    "Cancellation Request",
+    "Refund Request",
+    "General Inquiry",
+    "Compliance & Legal"
+  ],
+  "priority_levels": ["Low", "Medium", "High", "Critical"],
+  "deflectable": [
+    "Billing & Payments",
+    "Product Question",
+    "General Inquiry",
+    "Account Access"
+  ],
+  "human_required": [
+    "Cancellation Request",
+    "Compliance & Legal",
+    "Critical priority tickets"
+  ],
+  "subcategories": {
+    "Billing & Payments": [
+      "Unexpected charge",
+      "Payment method update",
+      "Invoice request",
+      "Direct deposit issue",
+      "Fee inquiry",
+      "Payment failed",
+      "Balance discrepancy"
+    ],
+    "Account Access": [
+      "Forgot password",
+      "Account locked",
+      "Two-factor authentication issue",
+      "Email change request",
+      "Username recovery",
+      "SSO / login error"
+    ],
+    "Technical Issue": [
+      "App crash / error",
+      "Feature not working",
+      "Integration failure",
+      "Slow performance",
+      "Data not syncing",
+      "Mobile app bug"
+    ],
+    "Product Question": [
+      "How to use feature",
+      "Eligibility inquiry",
+      "Limits & fees",
+      "Payroll advance availability",
+      "Transfer timing",
+      "Supported banks"
+    ],
+    "Cancellation Request": [
+      "Cancel subscription",
+      "Downgrade plan",
+      "Close account",
+      "Remove employer"
+    ],
+    "Refund Request": [
+      "Duplicate charge refund",
+      "Incorrect fee refund",
+      "Transaction dispute",
+      "Partial refund request"
+    ],
+    "General Inquiry": [
+      "Company information",
+      "Onboarding question",
+      "Feature availability",
+      "Feedback / suggestion",
+      "Contact information"
+    ],
+    "Compliance & Legal": [
+      "Data privacy request",
+      "CCPA / GDPR request",
+      "Subpoena / legal hold",
+      "Fraud report",
+      "Dispute / chargeback",
+      "Identity verification"
+    ]
+  },
+  "priority_rules": {
+    "Critical": "Account security breach, fraud, data loss, or system-wide outage affecting user funds",
+    "High": "User cannot access account, payment failed, or unresolved issue after 24 hours",
+    "Medium": "Feature issue, billing question, or inquiry that needs response within 48 hours",
+    "Low": "General question, how-to inquiry, or feedback with no urgency"
+  }
+}

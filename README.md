@@ -48,8 +48,8 @@ pip install -r requirements.txt
 export ANTHROPIC_API_KEY="your-key-here"   # Linux/Mac
 $env:ANTHROPIC_API_KEY="your-key-here"     # PowerShell
 
-# Generate synthetic data (if not already present)
-python -c "import data.generate_tickets"   # or run the notebook
+# Generate synthetic data (already included, but can regenerate)
+python data/generate_tickets.py
 
 # Run the classifier
 python classifier.py
@@ -64,6 +64,7 @@ jupyter notebook analysis.ipynb
 |------|-------------|
 | `data/tickets.csv` | 300 synthetic support tickets for a fintech company |
 | `data/taxonomy.json` | Classification taxonomy: categories, priorities, deflection rules |
+| `data/generate_tickets.py` | Script that generates the synthetic tickets dataset |
 | `classifier.py` | Core batch classification pipeline using Claude Haiku via Anthropic API |
 | `roi_model.py` | Deflection ROI calculator with sensitivity analysis |
 | `analysis.ipynb` | Full analysis: data overview, classification metrics, deflection analysis, ROI |
